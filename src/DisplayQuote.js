@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Button from './Button.js'
 
-class DisplayQuotes extends Component {
+class DisplayQuote extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -12,7 +11,6 @@ class DisplayQuotes extends Component {
   componentDidMount () {}
 
   render () {
-    debugger
     // const quotess = this.state.quotes
     // const allQuotes = Array.isArray(this.state.quotes)
     //   ? quotess[this.state.counter]
@@ -24,15 +22,15 @@ class DisplayQuotes extends Component {
         <div className='quote'>
           <p className='content'>
             <img
-              className='speech-marks'
+              className='speech-marks' alt='speech'
               src='https://static.thenounproject.com/png/333859-200.png'
             />
 
-            {Array.isArray(this.props.quotes)
-              ? console.log(this.props.quotes[9].quote)
+            {(Array.isArray(this.props.quotes) && this.props.quotes.length >0)
+              ? getNinth(this.props.quotes)
               : this.props.quotes.quote}
             <img
-              className='speech-marks'
+              className='speech-marks' alt='close=speech'
               src='https://static.thenounproject.com/png/19278-200.png'
             />
           </p>
@@ -54,4 +52,8 @@ class DisplayQuotes extends Component {
     )
   }
 }
-export default DisplayQuotes
+function getNinth(quotes){
+  
+  return quotes[8].quote
+}
+export default DisplayQuote

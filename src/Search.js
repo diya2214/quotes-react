@@ -6,8 +6,8 @@ class Search extends Component {
     this.input = input
   }
   submitHandler = e => {
-    console.log(this.input.value)
-    this.props.getQuotes('https://madiha-quote-app.glitch.me/search?term=life')
+     console.log('search term',this.input.value)
+    this.props.getQuotes(`https://madiha-quote-app.glitch.me/search?term=${this.input.value}`)
 
     // console.log('in focus')
     e.preventDefault()

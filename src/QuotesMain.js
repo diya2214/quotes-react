@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Button from './Button.js'
 import Search from './Search.js'
-import DisplayQuotes from './DisplayQuotes.js'
+import DisplayQuote from './DisplayQuote.js'
 
 const serverPathDefault = 'https://madiha-quote-app.glitch.me/quotes/random'
 class Quote extends Component {
@@ -49,7 +49,7 @@ class Quote extends Component {
     return (
       <main className='container'>
         <Search getQuotes={this.getQuotes} />
-        <DisplayQuotes quotes={this.state.Quote} />
+        <DisplayQuote quotes={this.state.Quote} />
 
         <Button getQuotes={this.getQuotes} caption='Get Wisdom' />
       </main>
