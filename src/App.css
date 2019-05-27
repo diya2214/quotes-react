@@ -3,26 +3,71 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 20vh;
   pointer-events: none;
 }
-
+.speech-marks {
+  height: 4vh;
+  pointer-events: none;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(209, 209, 209);
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
-
+.author {
+  text-align: left;
+  padding-left: 3vh;
+  font-weight: bold;
+}
 .App-link {
   color: #61dafb;
 }
+.mainSection {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh
+}
+.quote {
+  width: 100%;
+  padding: 2px;
+  font-size: 1.3rem;
+  background: #b7c7fa;
+  border-radius: 10px;
+  border: none;
+}
 
+
+.submitBtn {
+  margin-top: 2vh;
+  width: auto;
+  padding: 2vh;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  background: #4c82e7;
+}
+
+.my-fancy-btn {
+  margin-left: 10px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
